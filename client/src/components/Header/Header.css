@@ -1,0 +1,18 @@
+.chat-content .headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 30px;
+    border-bottom: 1px solid #eaeaea;
+    height: 83px;
+}
+.chat-content .headline a {
+    font-size: 12px;
+    color: #666;
+}
+.chat-content .headline a:hover {
+    color: #ee3535;
+}
+.chat-content .headline a i {
+    margin-right: 3px;
+}

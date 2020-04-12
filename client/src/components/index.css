@@ -1,0 +1,36 @@
+/* Fontawesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {  
+    height: 100%;
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-container-inner {
+    display: flex;
+    min-width: 960px;    
+    background-color: #ffffff;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,.06);
+}
+
+.chat-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

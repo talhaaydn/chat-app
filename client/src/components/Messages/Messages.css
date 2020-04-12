@@ -1,0 +1,82 @@
+.chat-content .inner {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.chat-content .inner .time-sign {
+    text-align: center;
+    display: block;
+    position: relative;
+    margin-bottom: 25px;
+}
+.chat-content .inner .time-sign:before {
+    content: "";
+    height: 1px;
+    background-color: #eaeaea;
+    display: block;
+    max-width: 30%;
+    margin: 0 auto;
+    position: relative;
+    top: 14px;
+    z-index: 10;
+}
+.chat-content .inner .time-sign span {
+    background-color: #fff;
+    font-size: 13px;
+    color: #888;
+    z-index: 11;
+    position: relative;
+    padding: 0 10px;
+}
+.chat-content .inner div {
+    margin-bottom: 15px;
+}
+.chat-content .inner .bubble {
+    display: block;
+    position: relative;
+}
+.chat-content .inner .bubble .text {
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    padding: 12px 18px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    max-width: 583px;
+    line-height: 25px;
+}
+.chat-content .inner .bubble.me .text {
+    background-color: #2a41e8;
+    position: relative;
+    color: #fff;
+    float: right;
+}
+.bubble .text:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #f4f4f4;
+    left: -6px;
+    right: auto;
+    top: 19px;
+    position: absolute;
+}
+.bubble.me .text:before {
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #66676b;
+    border-right: none;
+    right: -6px;
+    left: auto;
+}
+.bubble.me .text:before {
+    border-left: 6px solid #2a41e8;
+}
+
+.chat-content .inner .bubble.me .text p {
+    font-size: 15px;
+    line-height: 25px;
+}
